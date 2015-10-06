@@ -57,7 +57,7 @@
 		wheelDeltaY *= this.options.invertWheelDirection;
 
 		if ( !this.hasVerticalScroll ) {
-			wheelDeltaX = wheelDeltaY;
+			wheelDeltaX += wheelDeltaY;
 			wheelDeltaY = 0;
 		}
 
